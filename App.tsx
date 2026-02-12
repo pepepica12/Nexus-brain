@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
@@ -6,6 +5,7 @@ import DashboardView from './components/DashboardView';
 import PlatformsView from './components/PlatformsView';
 import ForensicsView from './components/ForensicsView';
 import AssistantChat from './components/AssistantChat';
+import ReposView from './components/ReposView';
 
 const PlaceholderView: React.FC<{ title: string }> = ({ title }) => (
   <div className="p-8">
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <main className="flex-1 bg-slate-950 overflow-hidden">
           <Routes>
             <Route path="/" element={<DashboardView />} />
-            <Route path="/repos" element={<PlaceholderView title="Repositories Management" />} />
+            <Route path="/repos" element={<ReposView />} />
             <Route path="/platforms" element={<PlatformsView />} />
             <Route path="/forensics" element={<ForensicsView />} />
             <Route path="/runners" element={<PlaceholderView title="Orchestration Runners" />} />
