@@ -1,0 +1,8 @@
+{
+  "name": "Nexus Multirepo Brain",
+  "description": "A centralized intelligence platform for managing multiple GitHub repositories and cloud services with forensic analysis and AI-driven orchestration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
